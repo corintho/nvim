@@ -8,3 +8,4 @@ vim.keymap.set(
   { noremap = true, silent = true, desc = "Resume" }
 )
 vim.keymap.set("n", "<leader>gm", ":Neogit<CR>", { desc = "magit" })
+vim.keymap.set("i", "kj", "<Esc>", { noremap = true })
