@@ -6,5 +6,8 @@ return {
     "sindrets/diffview.nvim", -- optional
     "ibhagwan/fzf-lua", -- optional
   },
+  opts = {
+    disable_context_highlighting = true,
+  },
   config = true,
 }

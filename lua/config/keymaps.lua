@@ -7,5 +7,7 @@ vim.keymap.set(
   require("telescope.builtin").resume,
   { noremap = true, silent = true, desc = "Resume" }
 )
-vim.keymap.set("n", "<leader>gm", ":Neogit<CR>", { desc = "magit" })
+vim.keymap.set("n", "<leader>gm", function()
+  require("neogit").open({ kind = "auto" })
+end, { desc = "magit" })
 vim.keymap.set("i", "kj", "<Esc>", { noremap = true })
