@@ -10,4 +10,9 @@ vim.keymap.set(
 vim.keymap.set("n", "<leader>gm", function()
   require("neogit").open({ kind = "auto" })
 end, { desc = "magit" })
+
 vim.keymap.set("i", "kj", "<Esc>", { noremap = true })
+
+vim.keymap.set("n", "<leader>hc", function()
+  require("nvim-highlight-colors").toggle()
+end, { desc = "toggle color", noremap = true })
