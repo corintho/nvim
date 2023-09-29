@@ -9,5 +9,14 @@ return {
   opts = {
     disable_context_highlighting = true,
   },
+  keys = {
+    {
+      "<leader>gm",
+      function()
+        require("neogit").open({ kind = "auto" })
+      end,
+      desc = "magit",
+    },
+  },
   config = true,
 }
