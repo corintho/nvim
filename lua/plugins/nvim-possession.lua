@@ -6,7 +6,7 @@ return {
     },
     opts = {
       autoswitch = {
-        enabled = true,
+        enable = true,
       },
     },
     keys = {
