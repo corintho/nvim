@@ -8,15 +8,15 @@ return {
       end, { expr = true })
     end,
   },
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, {
-        function()
-          return vim.fn["codeium#GetStatusString"]()
-        end,
-      })
-    end,
-  },
+  -- {
+  --   "nvim-lualine/lualine.nvim",
+  --   event = "VeryLazy",
+  --   opts = function(_, opts)
+  -- table.insert(opts.sections.lualine_x, {
+  --   function()
+  --     return vim.fn["codeium#GetStatusString"]()
+  --   end,
+  -- })
+  --   end,
+  -- },
 }
